@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Start Template</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body class="bg-[#DFE1E3]">
+    <main class="m-20">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start">
+          <button class="mx-4 rounded-xl bg-[#E7EAED] p-3 shadow-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none">
+              <path
+                d="M13.8287 18.0358C13.6466 18.0358 13.4646 17.9687 13.3208 17.825C13.0429 17.5471 13.0429 17.0871 13.3208 16.8092L18.63 11.5L13.3208 6.19082C13.0429 5.91291 13.0429 5.45291 13.3208 5.17499C13.5987 4.89707 14.0587 4.89707 14.3366 5.17499L20.1537 10.9921C20.4316 11.27 20.4316 11.73 20.1537 12.0079L14.3366 17.825C14.1929 17.9687 14.0108 18.0358 13.8287 18.0358Z"
+                fill="#292D32" />
+              <path
+                d="M19.4829 12.2188H3.35419C2.96127 12.2188 2.63544 11.8929 2.63544 11.5C2.63544 11.1071 2.96127 10.7812 3.35419 10.7812H19.4829C19.8759 10.7812 20.2017 11.1071 20.2017 11.5C20.2017 11.8929 19.8759 12.2188 19.4829 12.2188Z"
+                fill="#292D32" />
+            </svg>
+          </button>
+          <h4 class="text-2xl font-bold">إضافة موارد جديدة</h4>
+        </div>
+        <div class="flex">
+          <label class="relative inline-flex cursor-pointer items-center">
+            <input type="checkbox" value class="peer sr-only" />
+            <div
+              class="peer absolute h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300"></div>
+            <span class="mx-16 text-lg font-medium text-gray-900">مفعلة</span>
+          </label>
+
+          <button class="mx-4 rounded-lg bg-[#1C1C28] px-5 py-3 text-white">
+            حفظ التغييرات
+          </button>
+          <button
+            class="flex rounded-lg border-2 border-rose-500 bg-[#FFF6F6] px-5 py-3 font-bold text-rose-500 hover:bg-rose-300 hover:text-white">
+            <img src="./img/trash.svg" alt class="me-2" />
+            حذف المورد
+          </button>
+        </div>
+      </div>
+      <div class="mt-14 flex ">
+        <div class="flex w-1/2 flex-col  justify-between">
+          <div class=" flex rounded-xl bg-white p-10">
+            <div class="rounded-3xl">
+              <img src="./img/avatar-image.png" alt />
+            </div>
+            <div class="mx-4 w-full">
+              <form>
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="mb-2 block text-sm font-medium text-gray-900">اسم
+                    الموارد</label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="block w-full rounded-lg border border-gray-300 bg-rose-50 p-2.5 text-base font-bold text-black focus:border-blue-500 focus:ring-blue-500"
+                    placeholder="هيثم محمد "
+                    required />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class=" flex items-center justify-start rounded-xl bg-white p-10">
+            <p class="me-16 text-sm">اختر نوع الموارد</p>
+
+            <div class="me-16 flex items-center">
+              <input
+                id="default-radio-1"
+                type="radio"
+                value
+                name="default-radio"
+                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+              <label
+                for="default-radio-1"
+                class="ms-2 text-sm font-medium text-gray-900">حجز خلال اليوم</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                checked
+                id="default-radio-2"
+                type="radio"
+                value
+                name="default-radio"
+                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+              <label
+                for="default-radio-2"
+                class="ms-2 text-sm font-medium text-gray-900">حجز مدة ( أكثر من
+                يوم )</label>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class=" ms-10 flex w-1/2 items-center justify-start rounded-xl bg-white p-10">
+          <div class="mx-4 w-full">
+            <form>
+              <label
+                for="email"
+                class="mb-2 block text-sm font-medium text-gray-900">اسم
+                الموارد</label>
+              <div class="mb-6 relative flex flex-nowrap items-stretch">
+                <input
+                  type="number"
+                  id="email"
+                  class="block relative flex-auto w-full rounded-lg border border-l-0 border-gray-300 bg-rose-50 p-2.5 text-base font-bold text-black focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="هيثم محمد "
+                  required />
+                  <span
+                  class="flex items-center whitespace-nowrap rounded-lg border border-r-0 border-solid border-neutral-300 px-9  text-center text-base font-normal leading-[1.6] text-neutral-700"
+                  id="basic-addon1">شهر</span>
+                  
+              </div>
+              <p class="mb-4 text-sm">اختر نوع الموارد</p>
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="flex items-center justify-between">
+
+                            <div class="me-16 flex items-center">
+                              <input
+                                id="default-radio-1"
+                                type="radio"
+                                value
+                                name="default-radio"
+                                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                              <label
+                                for="default-radio-1"
+                                class="ms-2 text-sm font-medium text-gray-900 flex"><span><img class="me-3" src="./img/box-time.svg" alt=""></span>وقت الخدمة</label>
+                            </div>
+                            <div class="flex items-center">
+                              <input
+                                checked
+                                id="default-radio-2"
+                                type="radio"
+                                value
+                                name="default-radio"
+                                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                              <label
+                                for="default-radio-2"
+                                class="ms-2 text-sm font-medium text-gray-900 flex"> <img src="./img/clock.svg" class="me-3" alt="">الوقت ثابت</label>
+                            </div>
+                              
+                            </div>
+                            <div>
+                              <h1>selev</h1>
+                            </div>
+                          </div>
+              <p class="mb-4 text-sm flex">الحجز المتعدد <span><img src="./img/info-circle.svg" alt=""></span></p>
+                        <div class="mb-3 flex items-center justify-between">
+                            <div class="flex items-center justify-between">
+
+                            <div class="me-16 flex items-center">
+                              <input
+                                id="default-radio-1"
+                                type="radio"
+                                value
+                                name="default-radio"
+                                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                              <label
+                                for="default-radio-1"
+                                class="ms-2 text-sm font-medium text-gray-900 flex"><img class="me-3" src="./img/vector.svg" alt="">حجز واحد فقط</label>
+                            </div>
+                            <div class="flex items-center">
+                              <input
+                                checked
+                                id="default-radio-2"
+                                type="radio"
+                                value
+                                name="default-radio"
+                                class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                              <label
+                                for="default-radio-2"
+                                class="ms-2 text-sm font-medium text-gray-900 flex"> <img src="./img/manyVector.svg " class="me-3" alt="">حجز اكثر من شخص لنفس الموعد</label>
+                            </div>
+                              
+                            </div>
+                            <div>
+                              <h1>selev</h1>
+                            </div>
+                          </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
